@@ -1,7 +1,6 @@
 // Import required Winston
 const { createLogger, transports, format } = require('winston');
 
-//
 const logger = createLogger({
     level: 'info',
     format: format.combine(
@@ -19,4 +18,5 @@ const logger = createLogger({
 });
 
 //Export logger for use in files
+
 module.exports = logger;
